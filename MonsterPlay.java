@@ -22,6 +22,7 @@ public class MonsterPlay
         while(myMonster.getAge() <= myMonster.getLifespan() && keepGoing)
         {
             System.out.println();
+            myMonster.displayMonster();
 
             System.out.print("\n(P)et, po(K)e, (F)eed, (E)xercise, (Q)uit: ");
             String userCommand = input.next();

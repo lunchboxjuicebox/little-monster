@@ -72,4 +72,9 @@ public class Monster {
         }
     }
 
+    public void displayMonster()
+    {
+        System.out.println(name + " | " + age + " yrs | Max: " + lifespan + " yrs |");
+    }
+
 }
