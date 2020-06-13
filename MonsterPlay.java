@@ -18,6 +18,43 @@ public class MonsterPlay
 
         Monster myMonster = new Monster(monsterName, monsterLifeSpan);
 
-        System.out.println("THE LIFESPAN IS: " + myMonster.getLifespan());
+        boolean keepGoing = true;
+        while(myMonster.getAge() <= myMonster.getLifespan() && keepGoing)
+        {
+            System.out.println();
+
+            System.out.print("\n(P)et, po(K)e, (F)eed, (E)xercise, (Q)uit: ");
+            String userCommand = input.next();
+            char command = userCommand.charAt(0);
+            switch (command)
+            {
+                case 'P':
+                case 'p':
+                    myMonster.pet();
+                    break;
+                case 'K':
+                case 'k':
+                    myMonster.poke();
+                    break;
+                case 'F':
+                case 'f':
+                    System.out.print("Feed how much? ");
+                    int amtFood = input.nextInt();
+                    myMonster.feed(amtFood);
+                    break;
+                case 'E':
+                case 'e':
+                    System.out.print("How many hours will you walk "+monsterName+"? ");
+                    int amtExercise = input.nextInt();
+                    myMonster.exercise(amtExercise);
+                    break;
+                case 'Q':
+                case 'q':
+                    keepGoing = false;
+                    break;
+                default:
+                    System.out.println("Command not recognized.");
+            }
+        }
     }
 }

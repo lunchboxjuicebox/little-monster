@@ -3,6 +3,7 @@ public class Monster {
     private int lifespan;
     private int age;
     private int mood; // (2 = joyful, 1 = happy, 0 = neutral, -1 = sad, -2 = angry)
+    private int size;
 
     // default constructor
     public Monster()
@@ -54,5 +55,21 @@ public class Monster {
         }
     }
 
+    public void feed(int amount)
+    {
+        size += amount;
+        makeOlder();
+    }
+
+    public void exercise(int amount)
+    {
+        size -= amount;
+        if(size<1)
+        {
+            System.out.println("No more energy!");
+            size = 1;
+            makeOlder();
+        }
+    }
 
 }
