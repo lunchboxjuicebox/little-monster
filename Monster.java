@@ -10,6 +10,8 @@ public class Monster {
     {
         name = "(no name)";
         lifespan = 12;
+        age = 0;
+        mood = 2;
     }
 
     // overloaded constructor
@@ -18,6 +20,7 @@ public class Monster {
         name = newName;
         lifespan = newLifespan;
         age = 0;
+        mood = 2;
     }
 
     private void makeOlder()
@@ -75,6 +78,31 @@ public class Monster {
     public void displayMonster()
     {
         System.out.println(name + " | " + age + " yrs | Max: " + lifespan + " yrs |");
+
+        /* --- MOOD --- */
+        System.out.println(" ------------------------------");
+        System.out.print("| Status/Mood: ");
+        if(mood<=0)
+        {
+            System.out.println("angry! Σ(▼□▼メ) |");
+        }
+        else if (mood==1)
+        {
+            System.out.println("sad (｡T ω T｡)   |");
+        }
+        else if (mood==2)
+        {
+            System.out.println("meh (・_・)ノ    |");
+        }
+        else if (mood==3)
+        {
+            System.out.println("happy (o˘◡˘o)   |");
+        }
+        else if (mood>=4)
+        {
+            System.out.println("joyful! ٩(⁀ᗢ⁀｡)۶|");
+        }
+        System.out.print(" ------------------------------");
     }
 
 }
