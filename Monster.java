@@ -79,6 +79,16 @@ public class Monster {
     {
         System.out.println(name + " | " + age + " yrs | Max: " + lifespan + " yrs |");
 
+        /* --- DRAW PET --- */
+        System.out.print("     __     "); // top of head
+        // space before the top of tail
+        for(int i=0; i < size; i++)
+        {
+            System.out.print(" ");
+        }
+        System.out.println("_"); // top of the tail
+        System.out.print("   o'')}_");
+
         /* --- MOOD --- */
         System.out.println(" ------------------------------");
         System.out.print("| Status/Mood: ");
