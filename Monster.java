@@ -88,7 +88,12 @@ public class Monster {
         }
         System.out.println("_"); // top of the tail
         System.out.print("   o'')}_");
-
+        // body segment top half
+        for (int i = 0; i < size; i++)
+        {
+            System.out.print("_");  
+        }
+        
         /* --- MOOD --- */
         System.out.println(" ------------------------------");
         System.out.print("| Status/Mood: ");
