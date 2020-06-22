@@ -57,5 +57,7 @@ public class MonsterPlay
                     System.out.println("Command not recognized.");
             }
         }
+        System.out.println();
+        System.out.println("Oh no! " + petName + " expired (×_×)⌒☆ ");
     }
 }
