@@ -58,6 +58,6 @@ public class MonsterPlay
             }
         }
         System.out.println();
-        System.out.println("Oh no! " + petName + " expired (×_×)⌒☆ ");
+        System.out.println("Oh no! " + monsterName + " expired (×_×)⌒☆ ");
     }
 }
