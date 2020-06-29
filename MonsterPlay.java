@@ -61,5 +61,6 @@ public class MonsterPlay
         System.out.println("Oh no! " + monsterName + " expired (×_×)⌒☆ ");
         System.out.println("                 ______");
         System.out.println("           _____/      \\_____");
+        System.out.println("          |  _     ___   _   ||");
     }
 }
