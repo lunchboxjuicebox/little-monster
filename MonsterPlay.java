@@ -62,5 +62,6 @@ public class MonsterPlay
         System.out.println("                 ______");
         System.out.println("           _____/      \\_____");
         System.out.println("          |  _     ___   _   ||");
+        
     }
 }
