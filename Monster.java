@@ -93,6 +93,7 @@ public class Monster {
         {
             System.out.print("_");  
         }
+        System.out.println("__//"); // tail
         // back paws
         System.out.print("(_/");
         
