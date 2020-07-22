@@ -95,6 +95,11 @@ public class Monster {
         }
         System.out.println("__//"); // tail
         System.out.print("    `_/  "); // body
+        for (int i = 0; i < size; i++)
+        {
+            System.out.print(" ");  
+        }
+        System.out.println("   )"); // their butt
         // back paws
         System.out.print("(_/");
         
